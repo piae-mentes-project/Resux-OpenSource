@@ -1,0 +1,162 @@
+LANGUAGE[to]繁體中文
+LANGUAGE_LABEL[to]語言
+TOUCH_START[to]輕觸開始
+BACK[to]返回
+LOGIN_SUCCESS[to]登入成功！
+FREE_PLAY_MODE[to]自由模式
+STORY_PLAY_MODE[to]劇情模式
+SHOP[to]商店
+SHOP_DESCRIPTION[to]購買物資
+ACHIEVEMENT_AND_COLLECTION[to]畫廊
+ACHIEVEMENT_AND_COLLECTION_DESCRIPTION[to]收藏品
+SWITCH[to]切換
+SETTING[to]設定
+MAPS[to]地圖
+CHAPTERS[to]選擇章節
+CHAPTER_0[to]序章
+CHAPTER_1[to]第一章·大景
+CHAPTER_S[to]單曲·精選集
+CHAPTER_TOTAL_COUNT[to]樂曲數
+CHAPTER_CLEARED_COUNT[to]已通關
+CHAPTER_LOCKED_COUNT[to]未解鎖
+CHAPTER_FC_COUNT[to]FC
+CHAPTER_AP_COUNT[to]AP
+CHAPTER_NEXT[to]下一章
+CHAPTER_PREVIOUS[to]下一章
+SONGS[to]選擇樂曲
+SONG_BEST[to]歷史最佳
+SONG_NEXT[to]下一曲
+SONG_PREVIOUS[to]上一曲
+SONG_START[to]開始
+SONG_DIFFICULTY_1[to]笑談
+SONG_DIFFICULTY_2[to]演義
+SONG_DIFFICULTY_3[to]史實
+SONG_DIFFICULTY_4[to]重現
+SONG_DIFFICULTY_S[to]劇情
+SONGPLAY_PAUSE[to]暫停
+SONGPLAY_RESULT[to]遊玩結果
+SONGPLAY_RETRY[to]重試
+SONGPLAY_RESUME[to]繼續
+SET_ILLUST_BLUR[to]插畫模糊倍率
+SET_ILLUST_BRIGHTNESS[to]插畫亮度
+SET_HIT_FX_SIZE[to]打擊特效大小
+SET_NOTE_SIZE[to]音符大小
+SET_TUTORIAL[to]再次進入教程
+SET_VOL_MAIN[to]主音量
+SET_VOL_MUSIC[to]音樂音量
+SET_VOL_SFX[to]打撃音效音量
+SET_VOL_SFXX[to]界面效果音量
+SET_OFFSET[to]音頻偏移
+SET_OFFSET_HINT[to]偏移過大时，建議將打擊音效音量設置為0
+SET_OFFSET_WIZARD[to]音頻偏移調節嚮導
+SET_OFFSET_WIZARD_TITLE[to]自動調節偏移
+SET_OFFSET_WIZARD_HINT[to]請在每個第三拍（重音）時按下。\n在四次按下後會顯示平均偏移，點擊「完成」以應用。
+SET_OFFSET_WIZARD_TAP[to]點擊
+SET_OFFSET_WIZARD_PLAY[to]播放
+SET_OFFSET_WIZARD_REPLAY[to]重新播放
+SET_OFFSET_WIZARD_FINISH[to]完成
+SET_OFFSET_WIZARD_BACK[to]返回
+SET_DSP_BUFFER[to]DSP Buffer 調節
+SET_DSP_BUFFER_TITLE[to]DSP Buffer 調節\n（部分設備可能需要重啟遊戲生效）
+SET_DSP_BUFFER_HINT[to]更低的DSP Buffer會帶來更低的音頻偏移\n一般建議設置為能使音頻流暢播放的最小值，該值過小或過大都可能導致異常\n調整後，您也需要重新調整音頻偏移
+SET_DSP_BUFFER_TEST[to]重置音頻系統並測試
+SET_DSP_BUFFER_CANCEL[to]取消
+SET_DSP_BUFFER_FINISH[to]完成
+SET_STATS[to]統計數據
+SET_NO_SAVE[to]不保存
+SET_SAVE_QUIT[to]保存並退出
+TIPS_1[to]【數據刪除】
+TIPS_2[to]對著魚缸打歌，就可以體驗到本遊戲的真諦啦！
+TIPS_3[to]譜面難度以“存世率”表示。“存世率”越低，則越難以“溯源”，即譜面難度越高。
+TIPS_4[to]開著水龍頭打歌可能有奇效
+TIPS_5[to]其實就是寫tips的人塞爆的譜面
+TIPS_6[to]據可靠消息，多處地區已被水淹沒
+TIPS_7[to]水，是小姐 (miss) 流出來的眼淚
+TIPS_8[to]你游的一大獨創之處，在於把暫停鍵的使用也納入新手教程內容
+TIPS_9[to]除了半note運動的物理規律以外，也請注意地球online的物理規律
+TIPS_10[to]譜面有三種常規難度：笑談 (Tale)、演義 (Romance)、史實 (History)。
+TIPS_11[to]本遊戲的屏幕面積利用率較高，請隨時注意飛來橫note
+TIPS_12[to]請不要為了臨場感而將設備放入水中，以免損壞
+TIPS_13[to]只有小p會出現Early/Late指示哦！
+TIPS_14[to]在眼前突然蹦出note什麼的，還是饒了我吧
+TIPS_15[to]你為什麼要盯著我看？
+TIPS_16[to]我只是不允許有比我更強的「椰葉」！
+TIPS_17[to]當你凝視這條tips時，tips也在凝視著你
+TIPS_18[to]看我幹嘛，收歌了嗎
+TIPS_19[to]試著對麥克風或充電口的位置吹氣，note可能會飄起來
+TIPS_20[to]雖然半note可能在任何地方出現，但判定點一定在水面及以下。
+TIPS_21[to]遊戲音頻播放異常時，請嘗試調整設置中的DSP Buffer
+TIPS_22[to]這麼龐大的世界觀，不可能只做這一款遊戲，對吧？
+TIPS_23[to]為什麼不在水中打歌呢？
+TIPS_24[to]既然有“水視頻”一說，那這就是“水歌”吧
+TIPS_25[to]在譜面實裝前，搶首殺的往往是主策劃或iOS端審核。顯然，我們排除了奧拓普雷先生。
+TIPS_26[to]地轉偏向力有概率影響打歌喲！
+TIPS_27[to]10min Studio這個工作室名稱是怎麼來的呢？因為當時想了10分鐘沒想出來。
+TIPS_28[to]這些tips需要查重嗎？
+TIPS_29[to]某些曲師可能也參與對應的譜面設計，譜面怎麼塞由ta說了算。
+TIPS_30[to]求求了，殺歌殺慢一點，嗚嗚嗚，嚶嚶嚶，哼哼啊啊啊啊啊啊啊啊啊
+TIPS_31[to]請保證設備溫度低於100度，否則水會沸騰，非常危險！
+TIPS_32[to]隔壁小破站投幣以供我們買襯衫。襯衫的價格是……
+TIPS_33[to]半note分為上半和下半note，顏色明顯的就是上半note。
+TIPS_34[to]如果想加入我們參與遊戲製作，可以加QQ群 829385438
+TIPS_35[to]水的折射會導致所見與實際位置不同，所以試試斜著屏幕玩吧？
+TIPS_36[to]半note的質量有輕有重，這會影響它們的運動軌跡。
+TIPS_37[to]如果覺得讀譜有困難的話，可以嘗試在設置中調整note大小。
+TIPS_38[to]Perfect、Good、Bad判定的視覺特效分別是金色、白色、紅色的。
+TIPS_39[to]早 綠 晚 紫
+TIPS_40[to]小姐 (miss) 很美，不需要判定視覺特效來修飾
+TIPS_41[to]《溯 Resux》是一款全新的瞎落式音樂節奏遊戲
+TIPS_42[to]小心手癖
+TIPS_43[to]你游沒有連擊分，請放心遊玩
+TIPS_44[to]Tips是拿來吃的（確信）
+TIPS_45[to]渴了的話，可以嘗試往水里多放note，直到水溢出屏幕就能喝到
+TIPS_46[to]Tips可以倒出水嗎？不能的話，就再加大力度吧
+TIPS_47[to]溯裡的水能喝嗎？
+TIPS_48[to]聽說tips之間有非常殘酷的競爭，只有萬里挑一的那個才能勝出
+TIPS_49[to]收歌重要，手更重要。
+TIPS_50[to]《溯 Resux》毫無疑問是一款音遊！真的是！
+TIPS_51[to]4 4 0 5
+TIPS_52[to]這裡沒有什麼tips
+TIPS_53[to]話說真的有人看tips嗎？
+TIPS_54[to]如果發現了什麼bug，麻煩您及時向我們反映喲！
+TIPS_55[to]多練
+TIPS_56[to]水資源短缺竟是因為大量水被灌入tips中？ ！
+TIPS_57[to]聽說打歌前先全miss三次分數會更高——一鼓作氣，再而衰，三而竭
+TIPS_58[to]建議在屏幕上灑滿水以體驗最真實的感覺
+TIPS_59[to]如果感覺打擊音延遲太大或播放不正常的話，就清理一下後台吧！
+TIPS_60[to]華（塞）！麗（爆）！
+TIPS_61[to]此次測試結束後，我們將不定期提供已有曲目的譜面更新，但不會修復bug或追加功能。期待下一次測試吧！
+TIPS_62[to]你認為，什麼是“音遊曲”？
+TIPS_63[to]看什麼看（生氣）
+TIPS_64[to]想要製霸我遊，得先制霸tips
+TIPS_65[to]請勿大力搓flick，因為這樣對手指皮膚不好
+TIPS_66[to]當您的手指上出現死皮時請勿撕去，因為這可能會導致您幾天玩不了遊戲
+TIPS_67[to]當您雙手製霸之後，不妨嘗試使用單手再製霸一遍
+TIPS_68[to]你游的看板娘有配音了嗎？
+TIPS_69[to]不要越級打歌
+TIPS_70[to]當您單手製霸之後，可以再用單腳制霸一遍
+TIPS_71[to]日行一善 (good)
+TIPS_72[to]我們真的不是 末 世 遊 戲 ！
+TIPS_73[to]F浮＝ρ液gV排
+TIPS_74[to]浮力大於重力時，note會加速上浮哦
+TIPS_75[to]你知道嗎？鼠標墊背面可以當防滑墊！
+TIPS_76[to]浮力小於重力時，note會加速下沉哦
+TIPS_77[to]好好學習，天天向溯
+TIPS_78[to]note的速度是怎麼計算出來的呢？ F=m·a, v=v0+a·t
+TIPS_79[to]您今天做好 (good) 人了嗎？
+TIPS_80[to]溯，漢語讀音sù。意為逆著水流的方向行進，後引申為追求根源或回想，比喻回首往事、探尋淵源。出自《詩·秦風·蒹葭》和《水經註·江水》。
+TIPS_81[to]有需求的話，可以加入官方的交流群
+TIPS_82[to]其實這條tips是未來的你寫出來的，因為2077年各大國各自發明了時光機
+TIPS_83[to]你會愛上這條tips，然後注視著它，卡在加載頁面……
+TIPS_84[to]使用Apple設備的玩家記得檢查“引導式訪問”開關哦
+TIPS_85[to]遊玩時記得開啟“免打擾”哦
+TIPS_86[to]本遊戲適宜水下游玩，請玩家務必在腦子進水時使用
+TIPS_87[to]你以為大小p判定是根據時間嗎？不，是根據力道。所以，請加大力度。
+TIPS_88[to]準備兩個設備，其中一個開啟畫面鏡像。然後將二者的水側緊貼放置，就可以召喚奧拓普雷先生哦～
+TIPS_89[to]打歌界面水的一大作用是幫助玩家的手指降溫
+TIPS_90[to]海 底 兩 萬 裡
+TIPS_91[to]請不要隨便嘗試存世率2%以下的譜面，除非你們會用牙齒彈吉他
+TIPS_92[to]三種樣式的note，意味著玩家的三種苦難
+TIPS_93[to]優秀的創新型音遊譜面應該創死玩家！ — inokana
+TIPS_94[to]我從來沒說過我寫的譜面我自己打得動 — Kevin
+TIPS_95[to]不音押，也別想讀懂！ — inokana

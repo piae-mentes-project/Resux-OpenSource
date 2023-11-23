@@ -1,0 +1,162 @@
+LANGUAGE[to]English
+LANGUAGE_LABEL[to]Language
+TOUCH_START[to]TOUCH TO START
+BACK[to]BACK
+LOGIN_SUCCESS[to]Logged in !
+FREE_PLAY_MODE[to]FREE PLAY
+STORY_PLAY_MODE[to]STORY
+SHOP[to]SHOP
+SHOP_DESCRIPTION[to]Purchase goods
+ACHIEVEMENT_AND_COLLECTION[to]GALLERY
+ACHIEVEMENT_AND_COLLECTION_DESCRIPTION[to]Collections
+SWITCH[to]Switch
+SETTING[to]Settings
+MAPS[to]MAPS
+CHAPTERS[to]CHAPTERS
+CHAPTER_0[to]PROLOGUE
+CHAPTER_1[to]Chapter Ⅰ - JING
+CHAPTER_S[to]SINGLES
+CHAPTER_TOTAL_COUNT[to]TOTAL
+CHAPTER_CLEARED_COUNT[to]CLEAR
+CHAPTER_LOCKED_COUNT[to]LOCKED
+CHAPTER_FC_COUNT[to]FC
+CHAPTER_AP_COUNT[to]AP
+CHAPTER_NEXT[to]NEXT
+CHAPTER_PREVIOUS[to]PREVIOUS
+SONGS[to]SONGS
+SONG_BEST[to]BEST SCORE
+SONG_NEXT[to]NEXT
+SONG_PREVIOUS[to]PREVIOUS
+SONG_START[to]START
+SONG_DIFFICULTY_1[to]Tale
+SONG_DIFFICULTY_2[to]Romance
+SONG_DIFFICULTY_3[to]History
+SONG_DIFFICULTY_4[to]Revival
+SONG_DIFFICULTY_S[to]Story
+SONGPLAY_PAUSE[to]PAUSE
+SONGPLAY_RESULT[to]RESULT
+SONGPLAY_RETRY[to]RETRY
+SONGPLAY_RESUME[to]RESUME
+SET_ILLUST_BLUR[to]Illustration Blurring
+SET_ILLUST_BRIGHTNESS[to]Illustration Brightness
+SET_HIT_FX_SIZE[to]Hitting Effect Size
+SET_NOTE_SIZE[to]Note Size
+SET_TUTORIAL[to]Tutorial
+SET_VOL_MAIN[to]Main Volume
+SET_VOL_MUSIC[to]Music Volume
+SET_VOL_SFX[to]Hitting SFX Volume
+SET_VOL_SFXX[to]General UI SFX Volume
+SET_OFFSET[to]Audio Offset
+SET_OFFSET_HINT[to]It is recommended to set Hitting SFX Volume to 0 if you have a large offset
+SET_OFFSET_WIZARD[to]Audio Offset Adjusting Wizard
+SET_OFFSET_WIZARD_TITLE[to]Auto-Detecting Audio Offset
+SET_OFFSET_WIZARD_HINT[to]Tap the button on every 3rd beat (the accent).\nA detected AVERAGE offset would be displayed after the 4th tap, and then tap FINISH to apply. 
+SET_OFFSET_WIZARD_TAP[to]TAP
+SET_OFFSET_WIZARD_PLAY[to]PLAY
+SET_OFFSET_WIZARD_REPLAY[to]REPLAY
+SET_OFFSET_WIZARD_FINISH[to]FINISH
+SET_OFFSET_WIZARD_BACK[to]BACK
+SET_DSP_BUFFER[to]DSP Buffer Adjustment
+SET_DSP_BUFFER_TITLE[to]DSP Buffer Adjustment\n(Restarting the game may be required)
+SET_DSP_BUFFER_HINT[to]The lower DSP Buffer, the lower audio offset.\nSet it to a minimum value that makes the audio play smoothly. \nYou need to adjust audio offset again after changing this item.
+SET_DSP_BUFFER_TEST[to]Reset audio system & Test
+SET_DSP_BUFFER_CANCEL[to]CANCEL
+SET_DSP_BUFFER_FINISH[to]FINISH
+SET_STATS[to]Stats
+SET_NO_SAVE[to]DO NOT SAVE
+SET_SAVE_QUIT[to]SAVE AND QUIT
+TIPS_1[to][MISSING DATA]
+TIPS_2[to]
+TIPS_3[to]We use Residue Rate to indicate the difficulty of a level's chart. The lower RR, the harder a chart is. 
+TIPS_4[to]Turn on the tap to play Tap. 
+TIPS_5[to]
+TIPS_6[to]
+TIPS_7[to]
+TIPS_8[to]
+TIPS_9[to]
+TIPS_10[to]There are 3 types of general levels: Tale, Romance and History.
+TIPS_11[to]
+TIPS_12[to]
+TIPS_13[to]Only "perfect" would have Early/Late indication, while "PERFECT" would not. 
+TIPS_14[to]
+TIPS_15[to]Why are you staring at me like that?
+TIPS_16[to]
+TIPS_17[to]When you gaze long into the Tips, the Tips also gazes into you.
+TIPS_18[to]
+TIPS_19[to]
+TIPS_20[to]Half Notes may come from all directions, but the judgment points are all beneath the water surface. 
+TIPS_21[to]Please refer to "DSP Buffer Adjustment" if the game audio seems to work incorrectly. 
+TIPS_22[to]We’ll only have Resux? Definitely NOT! 
+TIPS_23[to]Why not try playing Resux underwater?
+TIPS_24[to]
+TIPS_25[to]
+TIPS_26[to]
+TIPS_27[to]The name of 10min Studio comes from the fact that members can’t even come up with the name in 10 minutes. 
+TIPS_28[to]Should the Tips experience duplicate checking?
+TIPS_29[to]Some composers actually contribute to the designing of corresponding levels. 
+TIPS_30[to]
+TIPS_31[to]Keep your device temperature below 100℃, or the water would get boiled making you in danger! 
+TIPS_32[to]
+TIPS_33[to]There are 2 types of Half Notes - the Upper Halves and the Lower Halves. The Upper ones are distinctively colored.
+TIPS_34[to]If you wanna join us in game production, you may join the QQ Group 829385438
+TIPS_35[to]
+TIPS_36[to]The mass of Half Notes varies, influencing their movements. 
+TIPS_37[to]Try adjusting Note Size in Settings if you find it difficult to complete a level well.
+TIPS_38[to]The visual effects of PERFECT, GOOD and BAD are golden, white and red respectively. 
+TIPS_39[to]Early is GREEN, while Late is PURPLE. 
+TIPS_40[to]No visual effects needed to adorn the adorable Miss. 
+TIPS_41[to]
+TIPS_42[to]Watch out your stubborn muscle memory. 
+TIPS_43[to]Combo does not contribute to your score. Take it easy. 
+TIPS_44[to]
+TIPS_45[to]When feeling thirsty, you may try to put more Notes into the water until it overflows the screen, and then you could drink it.
+TIPS_46[to]
+TIPS_47[to]Is the water in Resux drinkable?
+TIPS_48[to]
+TIPS_49[to]
+TIPS_50[to]Resux is a RHYTHM GAME indeed! UNDOUBTEDLY!
+TIPS_51[to]4 4 0 5
+TIPS_52[to]NO TIPS HERE
+TIPS_53[to]Anybody reading tips? 
+TIPS_54[to]If you find any bug, just send us feedback and we would appreciate it. 
+TIPS_55[to]Practice makes PERFECT.
+TIPS_56[to]
+TIPS_57[to]
+TIPS_58[to]
+TIPS_59[to]Try killing background apps if hitting SFX seems abnormal. 
+TIPS_60[to]
+TIPS_61[to]After the alpha-test ends, we would update some levels of existing songs, but no bugs would be fixed and no new features would be added, until the beta-test. 
+TIPS_62[to]
+TIPS_63[to]Pay more attention to the Notes instead of me!
+TIPS_64[to]
+TIPS_65[to]Do NOT play the flick too hard. Otherwise, your finger skin may hurt. 
+TIPS_66[to]
+TIPS_67[to]If you’ve achieved AP of all levels with both hands, you may try with only one hand. 
+TIPS_68[to]
+TIPS_69[to]Do NOT play levels beyond your level. 
+TIPS_70[to]If you’ve achieved AP of all levels with only one hand, you may try with only one foot. 
+TIPS_71[to]
+TIPS_72[to]
+TIPS_73[to]F (buoyancy force) = ρ·g·V
+TIPS_74[to]The Note would gain an upward acceleration when the buoyancy force exceeds gravity.
+TIPS_75[to]If you turn your mousepad upside down, you will get a anti-slipping mat!
+TIPS_76[to]The Note would gain a downward acceleration when the gravity exceeds buoyancy force.
+TIPS_77[to]
+TIPS_78[to]How do we get the velocity of Notes? F = m·a, v = v0 + a·t
+TIPS_79[to]Are you a GOOD man today?
+TIPS_80[to]
+TIPS_81[to]You may join official QQ Groups if needed.
+TIPS_82[to]
+TIPS_83[to]
+TIPS_84[to]If you use Apple devices for playing, please check Guided Access.
+TIPS_85[to]Make sure that "DO NOT DISTURB" function is enabled before playing.
+TIPS_86[to]
+TIPS_87[to]
+TIPS_88[to]
+TIPS_89[to]The water in playing progress may help you to cool down your fingers. 
+TIPS_90[to]Vingt mille lieues sous les mers (20,000 Leagues under the Sea League)
+TIPS_91[to]Try playing a level whose Residue Rate is below 2% only if you could play the guitar with your teeth.
+TIPS_92[to]3 different types of Notes are applied as 3 different methods to drive the player crazy.
+TIPS_93[to]A charming chart from a tremendous rhythm game should trample all the players! – inokana
+TIPS_94[to]I’ve never said I can manage the level I designed. – Kevin
+TIPS_95[to]No cooperation with the rhythm, no comprehension of the chart. – inokana

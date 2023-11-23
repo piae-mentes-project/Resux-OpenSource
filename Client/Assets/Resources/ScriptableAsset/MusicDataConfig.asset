@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dade91bc3f8478448a33b82d901daf2a, type: 3}
+  m_Name: MusicDataConfig
+  m_EditorClassIdentifier: 
+  MusicGroups:
+  - id: 0
+    name: CHAPTER_0
+    musicConfigs:
+    - _id: 100001
+      _songName: Harbinger
+      _subTitle: 
+      _artistName: void (Mournfinale)
+      _illustrationName: ume73_
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 970
+        _designer: J8rever53.exe
+      - _level: 720
+        _designer: J8rever53.exe
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 140, y: 140}
+      musicPreviewRange: {x: 96000, y: 111379}
+      isUnLocked: 1
+    - _id: 100002
+      _songName: Migration
+      _subTitle: 
+      _artistName: Lax1u57
+      _illustrationName: megakite
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 830
+        _designer: Kevin & Estin
+      - _level: 650
+        _designer: Estin
+      - _level: 110
+        _designer: Kevin
+      bpmRange: {x: 128, y: 128}
+      musicPreviewRange: {x: 40763, y: 55953}
+      isUnLocked: 1
+    - _id: 100003
+      _songName: Class Memories
+      _subTitle: 
+      _artistName: Antistar feat. Ctymax
+      _illustrationName: "\u4E0D\u7528\u5199\u6211\xB3"
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 850
+        _designer: Ctymax
+      - _level: 530
+        _designer: Ctymax
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 145, y: 145}
+      musicPreviewRange: {x: 75500, y: 89490}
+      isUnLocked: 1
+    - _id: 100004
+      _songName: Sterelogue
+      _subTitle: 
+      _artistName: VeetaCrush
+      _illustrationName: "\u56DB\u6708\u5FAE\u5149"
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 820
+        _designer: IcedDog & AiSS
+      - _level: 510
+        _designer: IcedDog
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 120, y: 120}
+      musicPreviewRange: {x: 90031, y: 105548}
+      isUnLocked: 1
+    - _id: 100005
+      _songName: Xian
+      _subTitle: 
+      _artistName: Antti Martikainen
+      _illustrationName: "\u5DEE\u8BC4"
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 800
+        _designer: Kevin & Estin
+      - _level: 540
+        _designer: Estin & J8rever53.exe
+      - _level: 240
+        _designer: Kumo_MI ft. J-K
+      bpmRange: {x: 115, y: 115}
+      musicPreviewRange: {x: 47708, y: 62608}
+      isUnLocked: 1
+    - _id: 100006
+      _songName: "\u60CA\u6D9B\u843D\u65E5"
+      _subTitle: "from RA3 \u201C\u65E5\u5195\u201D MOD"
+      _artistName: Platix_Zhang
+      _illustrationName: "\u9752\u7384\u8D64\u7FD4 w/ anaesth"
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 790
+        _designer: Kevin
+      - _level: 480
+        _designer: Kevin
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 120, y: 120}
+      musicPreviewRange: {x: 106402, y: 121402}
+      isUnLocked: 1
+    - _id: 100007
+      _songName: Shelter
+      _subTitle: 
+      _artistName: MeatyRabbit & NceS
+      _illustrationName: A-Yin
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 860
+        _designer: Estin & J8rever53.exe
+      - _level: 560
+        _designer: Kevin & Estin
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 120, y: 120}
+      musicPreviewRange: {x: 88606, y: 103606}
+      isUnLocked: 1
+    - _id: 100008
+      _songName: Gurus - For the Posterity -
+      _subTitle: 
+      _artistName: AiSS
+      _illustrationName: Windsky
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 900
+        _designer: AiSS
+      - _level: 390
+        _designer: AiSS w/ J8rever53.exe
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 192, y: 192}
+      musicPreviewRange: {x: 134523, y: 134523}
+      isUnLocked: 1
+    - _id: 100009
+      _songName: Fantasy Land - Alpha
+      _subTitle: 
+      _artistName: Matrix & NceS
+      _illustrationName: chahui4
+      _musicGroupId: 0
+      _chartInfos:
+      - _level: 860
+        _designer: Kevin
+      - _level: 510
+        _designer: Kevin
+      - _level: 100
+        _designer: Kevin
+      bpmRange: {x: 200, y: 200}
+      musicPreviewRange: {x: 99869, y: 114077}
+      isUnLocked: 1
+  - id: 999
+    name: CHAPTER_S
+    musicConfigs:
+    - _id: 199901
+      _songName: scar of the emptiness
+      _subTitle: 
+      _artistName: MYUKKE.
+      _illustrationName: MYUKKE.
+      _musicGroupId: 999
+      _chartInfos:
+      - _level: 900
+        _designer: Kevin
+      - _level: 600
+        _designer: Kevin
+      - _level: 78
+        _designer: J8rever53.exe
+      bpmRange: {x: 128, y: 128}
+      musicPreviewRange: {x: 90470, y: 105000}
+      isUnLocked: 1
+    - _id: 199902
+      _songName: Monotonicity (Resux Edit)
+      _subTitle: 
+      _artistName: "DayStars with AiSS feat. \u661F\u5C18Infinity"
+      _illustrationName: Windsky
+      _musicGroupId: 999
+      _chartInfos:
+      - _level: 820
+        _designer: FFD700
+      - _level: 620
+        _designer: FFD700
+      - _level: 500
+        _designer: 
+      bpmRange: {x: 177, y: 177}
+      musicPreviewRange: {x: 97000, y: 112802}
+      isUnLocked: 1
+    - _id: 199903
+      _songName: LLS
+      _subTitle: 
+      _artistName: LeaF
+      _illustrationName: 233
+      _musicGroupId: 999
+      _chartInfos:
+      - _level: 0
+        _designer: 
+      - _level: 0
+        _designer: 
+      - _level: 500
+        _designer: FFD700
+      bpmRange: {x: 115, y: 115}
+      musicPreviewRange: {x: 0, y: 0}
+      isUnLocked: 1

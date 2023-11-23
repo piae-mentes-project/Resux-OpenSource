@@ -1,0 +1,4 @@
+!androidPlatform-*.aar
+
+*.jar
+*.jar.meta

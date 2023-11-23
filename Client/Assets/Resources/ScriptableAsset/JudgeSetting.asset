@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6396f74adb911f045b8c5d31ab0a8fad, type: 3}
+  m_Name: JudgeSetting
+  m_EditorClassIdentifier: 
+  Distance: 300
+  StableDistance: 48
+  ChangeHandProtectTime: 50
+  JudgeRanges:
+  - type: 0
+    ranges:
+    - result: 2
+      range: {x: -1000, y: 1000}
+    - result: 4
+      range: {x: -500, y: 500}
+    - result: 8
+      range: {x: -250, y: 250}
+    - result: 16
+      range: {x: -200, y: 200}
+  - type: 1
+    ranges:
+    - result: 2
+      range: {x: 0, y: 0}
+    - result: 4
+      range: {x: 0, y: 0}
+    - result: 8
+      range: {x: 0, y: 0}
+    - result: 16
+      range: {x: 0, y: 0}
+  - type: 2
+    ranges:
+    - result: 2
+      range: {x: 0, y: 0}
+    - result: 4
+      range: {x: 0, y: 0}
+    - result: 8
+      range: {x: 0, y: 0}
+    - result: 16
+      range: {x: 0, y: 0}
+  useDefault: 1
+  DefaultRangePairs:
+  - result: 2
+    range: {x: -200, y: 200}
+  - result: 4
+    range: {x: -160, y: 160}
+  - result: 8
+    range: {x: -80, y: 80}
+  - result: 16
+    range: {x: -40, y: 40}
