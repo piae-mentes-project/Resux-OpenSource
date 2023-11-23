@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8bed9257b5c190747b68e62ac31fa207
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicAudioSource: {instanceID: 0}
+  - effectAudioSource: {instanceID: 0}
+  - tapEffect: {fileID: 8300000, guid: ea52cc4247f0c064d922458448ed0d4f, type: 3}
+  - flickEffect: {fileID: 8300000, guid: 646b64058bf4cfb44b45557b94d1c665, type: 3}
+  - holdEffect: {fileID: 8300000, guid: 0d41c424f929afc42b1503ce9083ca68, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
