@@ -9,13 +9,13 @@ using System.IO;
 using Newtonsoft.Json;
 
 /// <summary>
-/// ¶¥²ãUI
+/// é¡¶å±‚UI
 /// </summary>
 public class UpPanelView : BaseView
 {
     #region Properties
 
-    [Header("ÎÄ¼ş°´Å¥")]
+    [Header("æ–‡ä»¶æŒ‰é’®")]
 
     #region FileUI or other
 
@@ -27,7 +27,7 @@ public class UpPanelView : BaseView
 
     #endregion
 
-    [Header("Ê±¼ä")]
+    [Header("æ—¶é—´")]
 
     #region Time Control
 
@@ -42,7 +42,7 @@ public class UpPanelView : BaseView
 
     #endregion
 
-    [Header("Çø¼ä")]
+    [Header("åŒºé—´")]
 
     #region Section
 
@@ -68,12 +68,7 @@ public class UpPanelView : BaseView
 
     private void Start()
     {
-#if UNITY_EDITOR
         OnOpenOrCreateFile();
-#else
-        var view = Popup.ShowSpecialWindow<CertificationPopupView>("CertificationPopupView");
-        view.Initialize(OnOpenOrCreateFile);
-#endif
     }
 
     #region Public Method
@@ -87,7 +82,7 @@ public class UpPanelView : BaseView
             jsonSerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             return jsonSerializerSettings;
         };
-        // ÎÄ¼ş°´Å¥¼àÌı
+        // æ–‡ä»¶æŒ‰é’®ç›‘å¬
         settingButton.onClick.AddListener(() =>
         {
             SettingPanelView.Instance.ShowSettings();
@@ -102,7 +97,7 @@ public class UpPanelView : BaseView
         exportFileButton.onClick.AddListener(OnExportMapFile);
         toolsButton.onClick.AddListener(OnOpenTools);
 
-        // ÒôÀÖÏà¹Ø
+        // éŸ³ä¹ç›¸å…³
         timeSlider.onValueChanged.AddListener(value =>
         {
             MusicPlayManager.Instance.OnMusicProgressChanged(value);
@@ -201,9 +196,9 @@ public class UpPanelView : BaseView
     {
         if (EditingData.IsOpenMusic)
         {
-            Debug.Log("±£´æ¹¤³Ì");
+            Debug.Log("ä¿å­˜å·¥ç¨‹");
             SaveProject();
-            Popup.ShowMessage("±£´æ³É¹¦£¡", new Color(0.1f, 0.4f, 0.7f));
+            Popup.ShowMessage("ä¿å­˜æˆåŠŸï¼", new Color(0.1f, 0.4f, 0.7f));
         }
     }
 
@@ -211,13 +206,13 @@ public class UpPanelView : BaseView
     {
         if (EditingData.IsOpenMusic)
         {
-            Debug.Log("±£´æ¹¤³Ì");
+            Debug.Log("ä¿å­˜å·¥ç¨‹");
             SaveProject();
             if (!Directory.Exists(MapDesignerSettings.ProjectOutPath))
             {
                 Directory.CreateDirectory(MapDesignerSettings.ProjectOutPath);
             }
-            Debug.Log("µ¼³öÆ×Ãæ£¬Ã¿´Î»áÏÈ¼ì²é¿ÕÖµ");
+            Debug.Log("å¯¼å‡ºè°±é¢ï¼Œæ¯æ¬¡ä¼šå…ˆæ£€æŸ¥ç©ºå€¼");
             foreach (Difficulty difficulty in System.Enum.GetValues(typeof(Difficulty)))
             {
                 if (!ExportMap(difficulty))
@@ -225,21 +220,21 @@ public class UpPanelView : BaseView
                     return;
                 }
             }
-            Popup.ShowMessage("µ¼³ö³É¹¦£¡", new Color(0.1f, 0.4f, 0.7f));
+            Popup.ShowMessage("å¯¼å‡ºæˆåŠŸï¼", new Color(0.1f, 0.4f, 0.7f));
         }
     }
 
     private bool ExportMap(Difficulty difficulty)
     {
         var editMap = EditingData.EditingMapDic[difficulty];
-        Debug.Log($"¼ì²é {difficulty} µÄ¿ÕÅĞ¶¨");
+        Debug.Log($"æ£€æŸ¥ {difficulty} çš„ç©ºåˆ¤å®š");
 
         if (!EditingData.CheckMap(editMap))
         {
-            Debug.Log($"{difficulty} ´æÔÚ¿ÕÅĞ¶¨");
+            Debug.Log($"{difficulty} å­˜åœ¨ç©ºåˆ¤å®š");
             return false;
         }
-        Debug.Log($"µ¼³ö {difficulty} ÄÑ¶ÈÆ×Ãæ");
+        Debug.Log($"å¯¼å‡º {difficulty} éš¾åº¦è°±é¢");
         var map = new MusicMap(editMap);
         var mapContent = JsonConvert.SerializeObject(map);
         File.WriteAllText(FileUtils.GetMapPath(difficulty, true), mapContent);
@@ -271,20 +266,20 @@ public class UpPanelView : BaseView
         }
         if(EditingData.SectionSelected1 && !EditingData.SectionSelected2)
         {
-            EditingData.SectionTime1 = EditingData.SectionTime1;
+            // EditingData.SectionTime1 = EditingData.SectionTime1;
             EditingData.SectionTime2 = MusicPlayManager.Instance.MusicTime*1000;
             EditingData.SectionSelected1 = true;
             EditingData.SectionSelected2 = true;
             if(EditingData.SectionTime1 >= EditingData.SectionTime2){
-                Popup.ShowMessage("Çø¼äÑ¡È¡µÚ¶şµãÔÚµÚÒ»µãÖ®Ç°£¬ÇëÖØĞÂÑ¡È¡", Color.red);
-                EditingData.SectionTime1 = EditingData.SectionTime1;
+                Popup.ShowMessage("åŒºé—´é€‰å–ç¬¬äºŒç‚¹åœ¨ç¬¬ä¸€ç‚¹ä¹‹å‰ï¼Œè¯·é‡æ–°é€‰å–", Color.red);
+                // EditingData.SectionTime1 = EditingData.SectionTime1;
                 EditingData.SectionTime2 = 0f;
                 EditingData.SectionSelected1 = true;
                 EditingData.SectionSelected2 = false;
             }
             return;
         }
-        Debug.LogError("<color=red>Çø¼äÑ¡È¡Ñ¡ÔñÁËµÚ¶ş¸öµãµ«Ã»ÓĞÑ¡ÔñµÚÒ»¸öµã£¬Õ¦¸ãµÄ</color>");
+        Debug.LogError("<color=red>åŒºé—´é€‰å–é€‰æ‹©äº†ç¬¬äºŒä¸ªç‚¹ä½†æ²¡æœ‰é€‰æ‹©ç¬¬ä¸€ä¸ªç‚¹ï¼Œå’‹æçš„</color>");
     }
 
     private void OnSectionInput()
@@ -293,12 +288,12 @@ public class UpPanelView : BaseView
         sectionInput2.text = ((int)(EditingData.SectionTime2+0.5f)).ToString();
         sectionInput1.interactable = EditingData.SectionSelected1;
         sectionInput2.interactable = EditingData.SectionSelected2;
-        // ÉÏÃæ°åÌ«¼·ÁË£¬ÒÔºóÓĞĞèÇóÔÙ¼Ó¸öÈ·¶¨°´Å¥£¬Ğ´ÊÖ¶¯ÊäÈë
+        // ä¸Šé¢æ¿å¤ªæŒ¤äº†ï¼Œä»¥åæœ‰éœ€æ±‚å†åŠ ä¸ªç¡®å®šæŒ‰é’®ï¼Œå†™æ‰‹åŠ¨è¾“å…¥
     }
 
     private void OnCopyShortcut(){
         Popup.ShowSpecialWindow<CopyPastePopupView>("CopyPastePopupView");
-        // ÔİÊ±ÏÈÕâÑù
+        // æš‚æ—¶å…ˆè¿™æ ·
     }
 
     #endregion
@@ -328,10 +323,10 @@ public class UpPanelView : BaseView
 
     public static void SaveProject()
     {
-        // ÅäÖÃ±£´æ
+        // é…ç½®ä¿å­˜
         GlobalSettings.SaveSettings();
         MapDesignerSettings.SaveSettings();
-        // Æ×Ãæ±£´æ
+        // è°±é¢ä¿å­˜
         SaveMaps();
     }
 

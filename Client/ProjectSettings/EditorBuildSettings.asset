@@ -24,15 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ResultScene.unity
     guid: 9c69fa10d308e294b81dc80202852813
   - enabled: 1
-    path: Assets/Scenes/DialogScene.unity
-    guid: 7088e684d4ee9ca469dd5a7317ae5509
-  - enabled: 1
-    path: Assets/Scenes/ChapterMapScene.unity
-    guid: 4c5b7948036adba41adbda9e66f2ac81
-  - enabled: 1
-    path: Assets/Scenes/StoryScene.unity
-    guid: e06ae0b4b43250a4786777885e4c9b36
-  - enabled: 1
     path: Assets/Scenes/PlayerInfoScene.unity
     guid: 99320a3bf7ccc364ca7eb2a9423533b2
   - enabled: 1
