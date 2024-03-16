@@ -223,9 +223,9 @@ namespace Resux.UI.Manager
                     TutorialManager.CancelForcedTutorial();
                 }
 
-                Assets.AudioLoader.UnloadMusicBundle();
-                Assets.MapLoader.UnloadMapBundle();
-                Assets.ImageLoader.UnloadMusicCoverBundle();
+                // Assets.AudioLoader.UnloadMusicBundle();
+                // Assets.MapLoader.UnloadMapBundle();
+                // Assets.ImageLoader.UnloadMusicCoverBundle();
 
                 Navigator.ClearEscapeStack();
                 Navigator.JumpScene(GameScene.MainMenuScene);

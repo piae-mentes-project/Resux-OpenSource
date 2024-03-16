@@ -9,7 +9,7 @@ namespace Resux
     /// <summary>
     /// 通用协程方法类
     /// </summary>
-    public static class CoroutineUtils
+    public class CoroutineUtils : MonoBehaviour
     {
         #region properties
 
@@ -24,6 +24,9 @@ namespace Resux
         static CoroutineUtils()
         {
             waitForEndOfFrame = new WaitForEndOfFrame();
+            var coroutineUtilsGo = new GameObject("coroutineUtils");
+            DontDestroyOnLoad(coroutineUtilsGo);
+            SetCoroutineInstance(coroutineUtilsGo.AddComponent<CoroutineUtils>());
         }
 
         /// <summary>
@@ -174,6 +177,41 @@ namespace Resux
             return StartCoroutine(ExecuteLoopUntil(action, condition, waitSecond, executeImmediatelyFirst, onOver));
         }
 
+        /// <summary>
+        /// 执行并等待结果
+        /// </summary>
+        /// <param name="action">执行内容</param>
+        /// <param name="condition">等待条件</param>
+        /// <param name="onOver">完成的回调</param>
+        /// <returns>协程实例</returns>
+        public static Coroutine RunAndWaitUntil(Action action, Func<bool> condition, Action onOver = null)
+        {
+            return StartCoroutine(ExecuteAndWaitUntil(action, condition, onOver));
+        }
+
+        /// <summary>
+        /// 等待条件满足后执行
+        /// </summary>
+        /// <param name="condition">等待条件</param>
+        /// <param name="action">执行内容</param>
+        /// <returns>协程实例</returns>
+        public static Coroutine RunWaitUntil(Func<bool> condition, Action action)
+        {
+            return StartCoroutine(ExecuteWaitUntil(condition, action));
+        }
+
+        /// <summary>
+        /// 执行并等待结果
+        /// </summary>
+        /// <param name="action">执行内容</param>
+        /// <param name="condition">等待条件</param>
+        /// <param name="onOver">完成的回调</param>
+        /// <returns>协程实例</returns>
+        public static Coroutine RunAndWaitUntil(Func<YieldInstruction> action, Func<bool> condition, Action onOver = null)
+        {
+            return StartCoroutine(ExecuteAndWaitUntil(action, condition, onOver));
+        }
+
         #region Private Coroutine Methods
 
         private static IEnumerator DelayExecute(Action action, float delayTime)
@@ -265,7 +303,7 @@ namespace Resux
 
             if (textureReq.result == UnityWebRequest.Result.ProtocolError || textureReq.result == UnityWebRequest.Result.ConnectionError)
             {
-                Logger.LogError("网络图片请求失败，请检查网络");
+                Debug.LogError("网络图片请求失败，请检查网络");
             }
             else
             {
@@ -312,6 +350,30 @@ namespace Resux
             }
 
             onOver?.Invoke();
+        }
+
+        private static IEnumerator ExecuteAndWaitUntil(Action action, Func<bool> condition, Action onOver = null)
+        {
+            action();
+
+            yield return new WaitUntil(condition);
+
+            onOver?.Invoke();
+        }
+
+        private static IEnumerator ExecuteAndWaitUntil(Func<YieldInstruction> action, Func<bool> condition, Action onOver = null)
+        {
+            yield return action();
+            yield return new WaitUntil(condition);
+
+            onOver?.Invoke();
+        }
+
+        private static IEnumerator ExecuteWaitUntil(Func<bool> condition, Action action)
+        {
+            yield return new WaitUntil(condition);
+
+            action?.Invoke();
         }
 
         #endregion

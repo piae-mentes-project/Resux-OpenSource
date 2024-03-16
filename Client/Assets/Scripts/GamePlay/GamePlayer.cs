@@ -602,9 +602,9 @@ namespace Resux.GamePlay
                     AccountManager.TutorialPhase = TutorialPhase.End;
                 }
 
-                Assets.AudioLoader.UnloadMusicBundle();
-                Assets.MapLoader.UnloadMapBundle();
-                Assets.ImageLoader.UnloadMusicCoverBundle();
+                // Assets.AudioLoader.UnloadMusicBundle();
+                // Assets.MapLoader.UnloadMapBundle();
+                // Assets.ImageLoader.UnloadMusicCoverBundle();
                 Logger.Log("Jump to GameScene Directly");
 
                 Navigator.JumpScene(GameScene.MainMenuScene);

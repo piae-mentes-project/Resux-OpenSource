@@ -40,11 +40,6 @@ namespace Resux.Assets
             }
         }
 
-        public static void UnloadMusicCoverBundle()
-        {
-            musicCoverLoader?.UnloadResource(false);
-        }
-
         public static Texture2D GetTexture2D(string name)
         {
             return texture2DLoader.GetResource(name);

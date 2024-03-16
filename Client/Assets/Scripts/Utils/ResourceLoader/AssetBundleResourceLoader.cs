@@ -40,14 +40,14 @@ namespace Resux.Assets
             resourcesCache = new Dictionary<string, TResource>();
         }
 
-        public AssetBundleResourceLoader(string path) : this(AssetBundleDM.GetAssetBundle(path))
+        public AssetBundleResourceLoader(string path, Action onUnload = null) : this(AssetBundleDM.GetAssetBundle(path, onUnload))
         {
             BundlePath = path;
         }
 
         public TResource GetResource(string name)
         {
-            return resourcesCache.ContainsKey(name) ? resourcesCache[name] : LoadResource(name);
+            return resourcesCache.TryGetValue(name, out var value) ? value : LoadResource(name);
         }
 
         public void AddResource(string name, TResource music)
@@ -71,26 +71,6 @@ namespace Resux.Assets
         public AssetBundleRequest LoadResourceAsync(string name)
         {
             return Bundle.LoadAssetAsync(name);
-        }
-
-        /// <summary>
-        /// 卸载资源，<paramref name="forceUnload"/>为 <c>true</c> 时强制卸载已加载的资源
-        /// </summary>
-        /// <param name="forceUnload">是否强制卸载已加载资源</param>
-        /// <param name="onUnload">卸载后的回调</param>
-        public void UnloadResource(bool forceUnload = false, Action onUnload = null)
-        {
-            if (forceUnload)
-            {
-                resourcesCache.Clear();
-            }
-
-            if (bundle == null)
-            {
-                return;
-            }
-
-            AssetBundleDM.UnLoadAssetBundle(bundle, forceUnload, onUnload);
         }
 
         #endregion

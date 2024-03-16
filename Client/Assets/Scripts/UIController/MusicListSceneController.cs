@@ -164,13 +164,14 @@ namespace Resux.UI.Manager
             StartCoroutine(AsyncLoadAllMusic());
         }
 
-        private void OnDestroy()
-        {
-            // 卸载ab包，减少资源占用（会延迟卸载，当尚未卸载时再次加载则会中断卸载）
-            AudioLoader.UnloadMusicBundle();
-            MapLoader.UnloadMapBundle();
-            ImageLoader.UnloadMusicCoverBundle();
-        }
+        // 已经改成根据最后加载时间自动延迟卸载了
+        // private void OnDestroy()
+        // {
+        //     // 卸载ab包，减少资源占用（会延迟卸载，当尚未卸载时再次加载则会中断卸载）
+        //     // AudioLoader.UnloadMusicBundle();
+        //     // MapLoader.UnloadMapBundle();
+        //     // ImageLoader.UnloadMusicCoverBundle();
+        // }
 
         #endregion
 

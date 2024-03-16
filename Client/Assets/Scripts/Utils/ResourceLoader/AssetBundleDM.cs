@@ -16,8 +16,7 @@ namespace Resux.Assets
         public enum AssetBundleState
         {
             NotLoad,
-            Loaded,
-            WaitForUnload
+            Loaded
         }
 
         public class AssetBundleInfo
@@ -26,8 +25,8 @@ namespace Resux.Assets
             public string Path { get; set; }
             /// <summary>ab包</summary>
             public AssetBundle AssetBundle { get; set; }
-            /// <summary>引用计数，当计数<=0时，启动延迟卸载</summary>
-            public int RefCount { get; set; }
+            /// <summary>上次加载时间，以此为准的一定时间后进行卸载</summary>
+            public float LastLoadTime { get; set; }
             /// <summary>ab包的状态</summary>
             public AssetBundleState State { get; set; }
         }
@@ -38,7 +37,8 @@ namespace Resux.Assets
 
         private static Dictionary<string, AssetBundleInfo> assetBundleCache;
         private static Dictionary<AssetBundleInfo, Coroutine> unloadingActions;
-
+        private static float CurrentTime => Time.unscaledTime;
+        
         #endregion
 
         static AssetBundleDM()
@@ -49,23 +49,19 @@ namespace Resux.Assets
 
         #region Public Method
 
-        public static AssetBundle GetAssetBundle(string path)
+        public static AssetBundle GetAssetBundle(string path, Action onUnload = null)
         {
-            if (assetBundleCache.ContainsKey(path))
+            AssetBundleInfo abInfo = null;
+            if (assetBundleCache.TryGetValue(path, out abInfo))
             {
-                var abInfo = assetBundleCache[path];
-                abInfo.RefCount++;
+                abInfo.LastLoadTime = Time.unscaledTime;
                 switch (abInfo.State)
                 {
                     case AssetBundleState.NotLoad:
                         abInfo.AssetBundle = AssetBundle.LoadFromFile(path);
+                        abInfo.State = AssetBundleState.Loaded;
                         break;
                     case AssetBundleState.Loaded:
-                        break;
-                    case AssetBundleState.WaitForUnload:
-                        CoroutineUtils.Stop(unloadingActions[abInfo]);
-                        unloadingActions.Remove(abInfo);
-                        abInfo.State = AssetBundleState.Loaded;
                         break;
                     default:
                         break;
@@ -77,43 +73,29 @@ namespace Resux.Assets
             var assetbundle = AssetBundle.LoadFromFile(path);
             if (assetbundle != null)
             {
-                var abInfo = new AssetBundleInfo()
+                abInfo = new AssetBundleInfo()
                 {
                     Path = path,
                     AssetBundle = assetbundle,
-                    RefCount = 1,
+                    LastLoadTime = Time.unscaledTime,
                     State = AssetBundleState.Loaded,
                 };
+                
+                var coroutine = CoroutineUtils.RunWaitUntil(() => CurrentTime - abInfo.LastLoadTime > Data.ConstConfigs.WaitABUnloadSecond,
+                    () =>
+                    {
+                        abInfo.AssetBundle.Unload(false);
+                        abInfo.State = AssetBundleState.NotLoad;
+                        onUnload?.Invoke();
+                        unloadingActions.Remove(abInfo);
+                    });
 
                 assetBundleCache.Add(path, abInfo);
+                unloadingActions.Add(abInfo, coroutine);
                 return assetbundle;
             }
 
             return null;
-        }
-
-        public static void UnLoadAssetBundle(AssetBundle assetBundle, bool isForce = false, Action onUnload = null)
-        {
-            var abInfo = assetBundleCache.Values.FirstOrDefault(info => info.AssetBundle == assetBundle);
-            if (abInfo == null)
-            {
-                return;
-            }
-
-            abInfo.RefCount--;
-            if (abInfo.RefCount <= 0 && !unloadingActions.ContainsKey(abInfo))
-            {
-                abInfo.State = AssetBundleState.WaitForUnload;
-                var coroutine = CoroutineUtils.RunDelay(
-                    () =>
-                    {
-                        abInfo.AssetBundle.Unload(isForce);
-                        abInfo.State = AssetBundleState.NotLoad;
-                        onUnload?.Invoke();
-                        unloadingActions.Remove(abInfo);
-                    }, Data.ConstConfigs.WaitABUnloadSecond);
-                unloadingActions.Add(abInfo, coroutine);
-            }
         }
 
         /// <summary>

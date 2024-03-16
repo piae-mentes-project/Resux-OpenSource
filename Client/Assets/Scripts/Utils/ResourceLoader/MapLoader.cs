@@ -33,11 +33,6 @@ namespace Resux.Assets
             }
         }
 
-        public static void UnloadMapBundle()
-        {
-            musicMapJsonLoader?.UnloadResource(false);
-        }
-
         public static MusicMap GetMusicMap(LevelData.LevelDetail levelDetail, Difficulty difficulty)
         {
             var path = $"{levelDetail._songName}_{difficulty}";
@@ -48,18 +43,6 @@ namespace Resux.Assets
             }
 
             return LoadMap(mapJsonText.text);
-        }
-
-        /// <summary>
-        /// 卸载谱面缓存并清理
-        /// </summary>
-        public static void ClearMapCache()
-        {
-            musicMapJsonLoader.UnloadResource(true, () =>
-            {
-                musicMapJsonLoader = null;
-                System.GC.Collect();
-            });
         }
 
         #endregion

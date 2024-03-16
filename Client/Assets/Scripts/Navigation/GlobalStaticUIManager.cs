@@ -22,7 +22,8 @@ namespace Resux.UI.Manager
         void Awake()
         {
             instance = this;
-            CoroutineUtils.SetCoroutineInstance(Instance);
+            // 协程工具将在静态构造方法中自动生成实例
+            // CoroutineUtils.SetCoroutineInstance(Instance);
         }
 
         void Start()

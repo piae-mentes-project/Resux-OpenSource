@@ -37,11 +37,6 @@ namespace Resux.Assets
             }
         }
 
-        public static void UnloadMusicBundle()
-        {
-            musicLoader?.UnloadResource(false);
-        }
-
         public static AudioClip GetMusic(string name)
         {
             return musicLoader.GetResource(name);
