@@ -10,6 +10,7 @@
 ------
 
 - Client：游戏客户端工程，Unity2021.3.27f1c2
+   - Client/PlatformInterfaces/Android：客户端的安卓插件工程
 - MapDesigner：游戏制谱器工程，Unity2021.3.27f1c2
 - ResourcesBuilder：游戏资源打包工程，Unity2021.3.27f1c2
 
