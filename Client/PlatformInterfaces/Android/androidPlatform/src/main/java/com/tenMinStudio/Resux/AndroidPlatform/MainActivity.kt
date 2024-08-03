@@ -44,22 +44,22 @@ class MainActivity : UnityPlayerActivity() {
         }
 
     private val bluetoothRequestCode = 114514
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        when (requestCode) {
-            bluetoothRequestCode -> {
-                if (grantResults.any() && grantResults.all { it == PackageManager.PERMISSION_GRANTED }) {
-                    bluetoothHeadsetReceiver.register(this)
-                } else {
-                    Toast.makeText(this, "我们需要蓝牙权限，这样当蓝牙耳机连接时我们可以自动进行优化。\nWe need Bluetooth access so that we can automatically optimize when the Bluetooth headset is connected", Toast.LENGTH_LONG).show()
-                }
-            }
-        }
-    }
+//    override fun onRequestPermissionsResult(
+//        requestCode: Int,
+//        permissions: Array<out String>,
+//        grantResults: IntArray
+//    ) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+//        when (requestCode) {
+//            bluetoothRequestCode -> {
+//                if (grantResults.any() && grantResults.all { it == PackageManager.PERMISSION_GRANTED }) {
+//                    bluetoothHeadsetReceiver.register(this)
+//                } else {
+//                    Toast.makeText(this, "我们需要蓝牙权限，这样当蓝牙耳机连接时我们可以自动进行优化。\nWe need Bluetooth access so that we can automatically optimize when the Bluetooth headset is connected", Toast.LENGTH_LONG).show()
+//                }
+//            }
+//        }
+//    }
 
     private fun initUnityInterface() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {

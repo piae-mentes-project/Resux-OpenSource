@@ -6,14 +6,14 @@ using UnityEngine;
 namespace Resux
 {
     /// <summary>
-    /// 平台接口的C#封装
+    /// 骞冲彴鎺ュ彛鐨凜#灏佽
     /// </summary>
     public interface IPlatformInterface
     {
         #region Interface Methods
 
         /// <summary>
-        /// 添加蓝牙插入事件监听
+        /// 娣诲姞钃濈墮鎻掑叆浜嬩欢鐩戝惉
         /// </summary>
         void AddBluetoothHeadsetListener(Action<bool> listenerAction);
 
