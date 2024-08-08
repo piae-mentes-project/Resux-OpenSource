@@ -2,6 +2,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using Resux.Data;
+using UnityEngine;
 
 namespace Resux
 {
@@ -26,7 +27,14 @@ namespace Resux
             }
 
             var content = File.ReadAllText(savedArchivePath);
-            return Utils.ConvertJsonToObject<SavedArchive>(content);
+            var archive = Utils.ConvertJsonToObject<SavedArchive>(content);
+            if (archive == null)
+            {
+                Logger.Log("存档文件读取为空，新建一个存档");
+                archive = new SavedArchive();
+            }
+
+            return archive;
         }
 
         /// <summary>

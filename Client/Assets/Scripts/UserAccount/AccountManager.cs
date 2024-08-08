@@ -42,7 +42,7 @@ namespace Resux.Data
         public static void FinishTutorial()
         {
             TutorialPhase = TutorialPhase.End;
-            UserLocalSettings.SetInt(ConstConfigs.LocalKey.TutorialKey, 1);
+            // UserLocalSettings.SetInt(ConstConfigs.LocalKey.TutorialKey, 1);
         }
 
         #endregion

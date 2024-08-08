@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Resux
 {
     /// <summary>
-    /// È«¾Ö¹ÜÀí½Å±¾£¬¿ÉÄÜ»áÓÃµ½£¿
+    /// å…¨å±€ç®¡ç†è„šæœ¬ï¼Œå¯èƒ½ä¼šç”¨åˆ°ï¼Ÿ
     /// </summary>
     public class GlobalManager : MonoBehaviour
     {
