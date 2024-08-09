@@ -76,10 +76,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Project Version
-ProjectSettings/ProjectVersion.txt
-ProjectSettings/PackageManagerSettings.asset
-
 # Android KeyStore
 # /KeyStore
 
